@@ -24,9 +24,9 @@ const Grid: React.FC<GridProps> = ({ guesses, currentGuess}): JSX.Element => {
             {!!(guesses.length) && 
                 guesses.flatMap(guess => guess.split('').map((letter, index) => <div key={letter+index} className={`cell ${getLetterClass(letter, index)}`}>{letter}</div>))}
             {(guesses.length < GUESSES) &&
-                currentGuess.split('').map(letter => <div className='cell'>{letter}</div>)
+                currentGuess.split('').map(letter => <div key={'g'+letter} className='cell'>{letter}</div>)
             }
-            {Array.from({length: emptyCells}).map(() => <div className='cell'></div>)}
+            {Array.from({length: emptyCells}).map((_,index) => <div key={'e'+index} className='cell'></div>)}
         </div>
     )
 }
