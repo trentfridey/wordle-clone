@@ -1,0 +1,44 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 4px;
+    grid-row-gap: 4px;
+    max-width: 350px;
+    height: 420px;
+}
+
+.cell {
+    border: 2px solid grey;
+    height: 64px;
+    width: 64px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.cell.selected-unused {
+    background-color: var(--dark-grey);
+    border: none;
+}
+
+.cell.selected-correct {
+    background-color: var(--green);
+    border: none;
+
+}
+
+.cell.selected-close {
+    background-color: var(--yellow);
+    border: none;
+
+}
+
+.cell.active {
+    border: 2px solid white;
+    height: 64px;
+    width: 64px;
+}

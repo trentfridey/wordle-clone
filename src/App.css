@@ -1,0 +1,53 @@
+.App {
+  height: 100vh;
+}
+
+header {
+  font-family: 'serif';
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  border-bottom: 1px solid grey;
+  text-align: center;
+  height: 66px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 0 15px;
+  justify-content: space-between;
+}
+
+.sub {
+  font-size: 10px;
+  font-weight: normal;
+  font-family: monospace;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  height: calc(100% - 66px);
+  max-width: 500px;
+}
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.selected-unused {
+  background-color: var(--dark-grey) !important;
+}
+
+.selected-correct {
+  background-color: var(--green) !important;
+}
+
+.selected-close {
+  background-color: var(--yellow) !important;
+}
