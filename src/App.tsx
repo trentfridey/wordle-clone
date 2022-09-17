@@ -43,7 +43,7 @@ function App() {
         else if (key === 'Enter' && currentGuess.length === WORD_LENGTH) {
           validateGuess(currentGuess)
       }
-      else if (currentGuess.length < WORD_LENGTH && key.match(/[a-zA-Z]/)) {
+      else if (currentGuess.length < WORD_LENGTH && key.length === 1 && key.match(/[a-zA-Z]/)) {
         setCurrentGuess(guess => (guess + key).toLowerCase())
       }
     }
