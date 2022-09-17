@@ -991,13 +991,6 @@ update-browserslist-db@^1.0.9:
     escalade "^3.1.1"
     picocolors "^1.0.0"
 
-vite-plugin-gh-pages@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/vite-plugin-gh-pages/-/vite-plugin-gh-pages-0.3.0.tgz#ff4fe28fc901464ef674176b5ab72f1516631893"
-  integrity sha512-nKS+YZsm4Lq3L10M77tmpkkKN2G+dFo3FpZaTsVWbCBh8EvQHIQZYhJNKI0a1kl1BQFBDEXyuNb13hqFkfEg/Q==
-  dependencies:
-    gh-pages "^4.0.0"
-
 vite@^3.1.0:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/vite/-/vite-3.1.1.tgz#fcfe12c3fe7e4c6def1fc52e4dc9cb0ccb2b1a59"
