@@ -5,11 +5,15 @@ import { useState } from 'react';
 import Grid from './Grid';
 import Keyboard from './Keyboard';
 import useEventListener from './useEventListener';
+import words from './words.json'
 
 const ALLOWED_GUESSES = 6
 const WORD_LENGTH = 5
 
-export const ANSWER = 'CRANE'
+const dayOfYear = (date) => Math.floor((date - new Date(date.getFullYear(), 0, 0).valueOf()) / 1000 / 60 / 60 / 24);
+
+export const ANSWER = words[dayOfYear(new Date()) % words.length]
+console.log(ANSWER)
 
 enum GameStatus {
   ONGOING,
