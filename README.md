@@ -2,6 +2,8 @@
 
 This is a simple clone of the [Wordle](https://www.nytimes.com/games/wordle/index.html) game built with React + Typescript
 
+[View Demo](https://trentfridey.github.io/wordle-clone/)
+
 ## Getting started
 
 First, clone the repo
