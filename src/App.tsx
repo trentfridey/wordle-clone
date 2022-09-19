@@ -63,12 +63,12 @@ function App() {
       alert('You won')
     }
     else if (guesses.length < ALLOWED_GUESSES) {
+      if (guesses.length === ALLOWED_GUESSES-1) {
+        alert(`The word was: ${ANSWER}`)
+        setGameStatus(GameStatus.GAME_OVER)
+      }
       setGuesses(guesses => [...guesses, guess])
       setCurrentGuess('')
-    }
-    else {
-      alert(`The word was: ${ANSWER}`)
-      setGameStatus(GameStatus.GAME_OVER)
     }
   }
 
